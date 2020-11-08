@@ -1,0 +1,9 @@
+body { background-color: #eaf6f6;}
+            
+h1{color: brown;}
+hr {
+         border-style: none;
+         border-top-style: dotted;
+         border-color: thistle;
+         border-width: 7px;
+          width: 5%;}
