@@ -149,3 +149,49 @@ do{
     console.log(array2[k]);
     k++;
 }   while(k < array2.length);
+
+///////////////////////////////////////////////////////////////////////////////////
+
+let myArray = ["Fan", "Camera", 19, 15, null, true];
+// array methods
+console.log(myArray);
+console.log(myArray.length);
+myArray.pop();
+console.log(myArray.length);
+myArray.push("Tushar");
+console.log(myArray);
+myArray.shift(); // it will print the array from 2nd element. (doesnot print 1st element)
+console.log(myArray);
+
+myArray.unshift("Happy");  // it will add in front of the array
+console.log(myArray);
+console.log("Lenght before unshift inside console.log ", myArray.length);
+
+// if we write unshift in console.log then it will print the length of the array
+console.log(myArray.unshift("TusharK"));
+
+// to sort the array : 
+myArray.sort();  // it firstly converts all elements into string and then sort according to the Dictionary
+console.log(myArray);
+
+
+// String in JavaScript
+let myString = "Hello Everyone, Hello This is JavaScript Code";
+console.log(myString.length);
+
+console.log(myString.indexOf("H"));   // it will print the first position of the character
+console.log(myString.lastIndexOf("e"));  // it will print the last position of the character
+
+console.log(myString.slice(0,3));  // to slice the string using : [a,b)
+console.log(myString.replace("Hello", "Hola")); // replace method will replace the first occurrence of the word
+
+// Date in JavaScript
+let myDate = new Date(); 
+console.log(myDate);
+
+// Methods in Date
+console.log(myDate.getTime());
+console.log(myDate.getDay());
+console.log(myDate.getMinutes());
+console.log(myDate.getHours());
+console.log(myDate.getFullYear());
