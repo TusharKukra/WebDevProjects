@@ -195,3 +195,67 @@ console.log(myDate.getDay());
 console.log(myDate.getMinutes());
 console.log(myDate.getHours());
 console.log(myDate.getFullYear());
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// DOM (Document Object Model)  -- Important
+
+// in this we can use the document to access the elements of HTML page.  (to manipulate the HTML)
+
+// Methods in DOM : .... document.getElementById();
+
+let elementID = document.getElementById('click');  // here click is the id of the button (in HTML code)
+console.log(elementID);
+
+let elementCLASS = document.getElementsByClassName('container');  // here click is the id of the button (in HTML code)
+console.log(elementCLASS);  // it has 2 elements : button, paragraph
+
+// to change the background of the container : button
+elementCLASS[0].style.background = 'yellow';  // for first element : button
+//elementCLASS[1].style.background = 'cyan'; // for second element : paragraph
+
+// we can add css class into method also using : classList.add()
+elementCLASS[1].classList.add("bg-primary");
+elementCLASS[1].classList.add("text-success");
+
+// to remove the class added using the above classList method:
+elementCLASS[1].classList.remove("text-success");
+
+console.log(elementID.innerHTML);  // it will show the HTML part of the given ID
+console.log(elementID.innerText);  // it will show the inner text of the given ID
+
+
+console.log(elementCLASS[0].innerHTML);  // it will show the inner HTML part of the given Class element
+console.log(elementCLASS[0].innerText); // show the inner text of the class element
+
+ 
+// if i want to print elements by using Tag Name : eg - Buttons, etc
+tn = document.getElementsByTagName('button');
+console.log(tn);
+
+tn2 = document.getElementsByTagName('div');
+
+// we can also create an element and add it in any class or Tag
+createdElement = document.createElement('p');
+createdElement.innerText = "This is a paragraph created using createElement method.";
+// now append it into the tagname
+tn2[0].appendChild(createdElement);  // it will add this into the same id element as tagname.
+
+// to replace the child with new element
+createdElement2 = document.createElement('b'); // b : bold text
+createdElement2.innerText = "This is the bold statement created using createElement method.";
+tn2[0].replaceChild(createdElement2, createdElement);
+
+// To remove the element from a Child
+tn2[0].removeChild(createdElement2);
+
+// Selecting using Query
+sel = document.querySelector('.container')
+console.log(sel);  // it will return only one element of CSS of given class
+
+sel2 = document.querySelectorAll('.container')
+console.log(sel2); // it will return all the elements of CSS of given class
+
+
+// And many more methods.....
