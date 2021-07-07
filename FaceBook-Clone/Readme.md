@@ -1,10 +1,12 @@
 # Facebook Clone 
 
 ### Tech used to build this clone :
-React + React Hooks
-React Context API --> Redux Pattern
-Material UI
-Flexbox
-Firebase's Firestore Realtime DB
-Firebase Hosting
-Firebase Google Authentication (FULL LOGIN)
+<ul>
+  <li>React + React Hooks</li>
+  <li>React Context API --> Redux Pattern</li>
+  <li>Material UI</li>
+  <li>Flexbox</li>
+  <li>Firebase's Firestore Realtime DB</li>
+  <li>Firebase Hosting</li>
+  <li>Firebase Google Authentication (FULL LOGIN)</li>
+</ul>
