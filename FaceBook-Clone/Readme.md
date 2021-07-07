@@ -9,4 +9,5 @@
   <li>Firebase's Firestore Realtime DB</li>
   <li>Firebase Hosting</li>
   <li>Firebase Google Authentication (FULL LOGIN)</li>
+  <li>React Flip Move : used to show pop animation on creating post</li>
 </ul>
