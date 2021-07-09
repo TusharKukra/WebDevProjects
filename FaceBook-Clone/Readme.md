@@ -8,6 +8,6 @@
   <li>Flexbox</li>
   <li>Firebase's Firestore Realtime DB</li>
   <li>Firebase Hosting</li>
-  <li>Firebase Google Authentication (FULL LOGIN)</li>
+  <li>Firebase Google Authentication (For LogIn)</li>
   <li>React Flip Move : used to show pop animation on creating post</li>
 </ul>
